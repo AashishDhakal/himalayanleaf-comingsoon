@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Leaf - Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #15322C;
+            /* Deep Forest Green based on logo */
+            --accent-gold: #C0A062;
+            /* Muted Gold */
+            --bg-color: #F3F6F4;
+            /* Very light sage/off-white */
+            --text-color: #2C2C2C;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .logo-container {
+            margin-bottom: 40px;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
+            /* Adjust based on actual visual weight */
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--primary-green);
+            margin: 0 0 10px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-green);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: #555;
+        }
+
+        .contact-box {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid rgba(21, 50, 44, 0.1);
+            display: inline-block;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .contact-box:hover {
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent-gold);
+        }
+
+        .contact-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #888;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact-email {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: var(--primary-green);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--primary-green);
+            padding-bottom: 2px;
+        }
+
+        .contact-email:hover {
+            color: var(--accent-gold);
+            border-bottom-color: var(--accent-gold);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .logo-img {
+                max-height: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <!-- Ensure the path matches where the image was saved -->
+            <img src="/static/img/himalayan_leaf_logo.png" alt="Himalayan Leaf Logo" class="logo-img">
+        </div>
+
+        <div class="subtitle">Ilam Reserve</div>
+        <h1>Grand Cru Tea from Nepal</h1>
+
+        <div class="divider"></div>
+
+        <p class="message">
+            We are currently steeping something extraordinary.<br>
+            Our online boutique is launching soon to bring you the finest single-origin teas.
+        </p>
+
+        <div class="contact-box">
+            <span class="contact-label">For Inquiries</span>
+            <a href="mailto:info@himalayanleaf.co" class="contact-email">info@himalayanleaf.co</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
